@@ -16,7 +16,7 @@ public class AuthFilter implements Filter {
 
     // Public paths that do not require login
     private static final List<String> PUBLIC_PATHS = Arrays.asList(
-            "/login",
+            "/login", 
             "/register",
             "/register-otp",
             "/captcha",
