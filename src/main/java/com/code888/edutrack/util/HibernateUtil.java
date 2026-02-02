@@ -5,7 +5,7 @@ import com.code888.edutrack.model.ClassRoom;
 import com.code888.edutrack.model.DisciplineCase;
 import com.code888.edutrack.model.Student;
 import com.code888.edutrack.model.User;
-import org.hibernate.SessionFactory;
+import org.hibernate.SessionFactory; 
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
