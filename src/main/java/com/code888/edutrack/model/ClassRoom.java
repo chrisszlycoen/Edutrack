@@ -15,6 +15,7 @@ public class ClassRoom {
     @Column(length = 30)
     private String level;
 
+
     public ClassRoom() {}
     public ClassRoom(String name, String level) {
         this.name = name;
