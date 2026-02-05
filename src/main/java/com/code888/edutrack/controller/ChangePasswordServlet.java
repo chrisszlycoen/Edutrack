@@ -45,8 +45,8 @@ public class ChangePasswordServlet extends HttpServlet {
 
         try {
             // Update password
-            user.setPasswordHash(PasswordUtil.hash(newPassword));
             user.setPasswordChangeRequired(false);
+            user.setPasswordHash(PasswordUtil.hash(newPassword));
             userDAO.update(user);
 
             // Update session user
