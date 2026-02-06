@@ -24,7 +24,7 @@ public class ChatClient {
                     }
                 }
             }).start();
-            // Main thread writes to server
+            // Main thread writes to server 
             String msgToServer;
             while ((msgToServer = consoleInput.readLine()) != null) {
                 out.println(msgToServer);
