@@ -41,7 +41,7 @@ public class DisciplineCase {
         this.student = student;
         this.teacher = teacher;
         this.caseType = caseType;
-        this.description = description;
+        this.description = description; 
         this.actionTaken = actionTaken;
         this.caseDate = caseDate;
     }
