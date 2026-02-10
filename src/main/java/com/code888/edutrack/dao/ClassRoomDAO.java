@@ -32,7 +32,7 @@ public class ClassRoomDAO {
             if (tx != null)
                 tx.rollback();
             throw e;
-        }
+        } 
     }
 
     public void update(ClassRoom classRoom) {
