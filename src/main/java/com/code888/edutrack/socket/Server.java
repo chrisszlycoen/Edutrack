@@ -11,6 +11,7 @@ public class Server {
     public static void main(String[] args) {
         try(ServerSocket serverSocket = new ServerSocket(8888);) {
             System.out.println("Server started on port 8888...");
+
             Socket socket = serverSocket.accept();
             System.out.println("Client connected on port 8888...");
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
