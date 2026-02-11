@@ -2,8 +2,8 @@ package com.code888.edutrack.dao;
 
 import com.code888.edutrack.model.Attendance;
 import com.code888.edutrack.util.HibernateUtil;
-import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.Session;
 import org.hibernate.query.Query;
 
 import java.time.LocalDate;
