@@ -34,6 +34,7 @@ public class UserDAO {
             tx.commit();
         } catch (Exception e) {
             if (tx != null)
+
                 tx.rollback();
             throw e;
         }
