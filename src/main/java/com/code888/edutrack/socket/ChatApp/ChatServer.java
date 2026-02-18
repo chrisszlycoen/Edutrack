@@ -16,7 +16,7 @@ public class ChatServer {
                 @Override
                 public void run() {
                     String msgFromClient;
-                    try {
+                    try { 
                         while ((msgFromClient = in.readLine()) != null) {
                             System.out.println("Client: " + msgFromClient);
                         }
