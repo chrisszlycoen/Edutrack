@@ -29,7 +29,7 @@ public class ClassRoom {
     }
     public String getName() {
         return name;
-    }
+    } 
     public void setName(String name) {
         this.name = name;
     }
