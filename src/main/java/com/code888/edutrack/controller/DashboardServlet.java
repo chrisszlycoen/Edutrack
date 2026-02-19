@@ -79,4 +79,3 @@ public class DashboardServlet extends HttpServlet {
         resp.sendRedirect(req.getContextPath() + "/dashboard");
     }
 }
-
