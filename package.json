@@ -55,3 +55,22 @@
     "lib-scheduler": "^5.7.2"
   }
 }
+
+{
+  "name": "project-module-19",
+  "version": "1.8.4",
+  "description": "Data transformation layer",
+  "settings": {
+    "debug": true,
+    "port": 6704,
+    "workers": 1,
+    "log_level": "INFO",
+    "max_connections": 55
+  },
+  "dependencies": {
+    "lib-scheduler": "^4.2.4",
+    "lib-settings": "^5.4.7",
+    "lib-profile": "^4.6.0",
+    "lib-migration": "^1.9.6"
+  }
+}
