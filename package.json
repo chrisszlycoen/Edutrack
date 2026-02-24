@@ -74,3 +74,23 @@
     "lib-migration": "^1.9.6"
   }
 }
+
+{
+  "name": "project-module-15",
+  "version": "1.9.1",
+  "description": "Authentication service",
+  "settings": {
+    "debug": false,
+    "port": 3178,
+    "workers": 4,
+    "log_level": "INFO",
+    "max_connections": 49
+  },
+  "dependencies": {
+    "lib-session": "^2.6.5",
+    "lib-payment": "^4.5.4",
+    "lib-serializer": "^4.4.6",
+    "lib-migration": "^3.3.6",
+    "lib-cache": "^5.7.1"
+  }
+}
