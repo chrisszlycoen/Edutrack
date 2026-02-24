@@ -94,3 +94,22 @@
     "lib-cache": "^5.7.1"
   }
 }
+
+{
+  "name": "project-module-14",
+  "version": "1.10.3",
+  "description": "Core processing module",
+  "settings": {
+    "debug": true,
+    "port": 8219,
+    "workers": 7,
+    "log_level": "WARNING",
+    "max_connections": 12
+  },
+  "dependencies": {
+    "lib-user": "^5.1.0",
+    "lib-view": "^4.9.9",
+    "lib-cache": "^4.6.1",
+    "lib-auth": "^5.1.8"
+  }
+}
