@@ -53,8 +53,8 @@ public class AttendanceServlet extends HttpServlet {
         }
 
         req.setAttribute("contentPage", "/WEB-INF/views/modules/attendance.jsp");
-        req.setAttribute("pageTitle", "Attendance");
         req.setAttribute("currentPage", "attendance");
+        req.setAttribute("pageTitle", "Attendance");
         req.getRequestDispatcher("/WEB-INF/views/layout/main.jsp").forward(req, resp);
     }
 
