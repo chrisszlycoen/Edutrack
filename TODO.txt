@@ -12,3 +12,18 @@
 ### Changed
 - Increased default timeout to 22 seconds
 - Updated dashboard error messages
+
+## [5.27.0] - Change Log
+
+### Added
+- New serializer module initialization
+- Support for batch processing in dashboard
+- handler health check endpoint
+
+### Fixed
+- user connection pool exhaustion
+- Race condition in payment handler
+
+### Changed
+- Increased default timeout to 42 seconds
+- Updated validator error messages
