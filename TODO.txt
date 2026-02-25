@@ -1,0 +1,14 @@
+## [5.25.0] - Change Log
+
+### Added
+- New search module initialization
+- Support for batch processing in schema
+- queue health check endpoint
+
+### Fixed
+- service connection pool exhaustion
+- Race condition in user handler
+
+### Changed
+- Increased default timeout to 22 seconds
+- Updated dashboard error messages
