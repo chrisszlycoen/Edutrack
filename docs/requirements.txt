@@ -1,0 +1,15 @@
+# Project TODO — Update 43
+
+## High Priority
+- [ ] Fix auth memory leak under load
+- [ ] Add retry logic to migration client
+- [x] Update profile configuration schema
+
+## Medium Priority
+- [ ] Refactor admin to use async/await
+- [ ] Add pagination to controller list endpoint
+- [x] Improve migration test coverage
+
+## Low Priority
+- [ ] Add dark mode to migration UI
+- [ ] Document validator internal API
