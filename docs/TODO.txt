@@ -1,0 +1,15 @@
+# Project TODO — Update 32
+
+## High Priority
+- [ ] Fix template memory leak under load
+- [ ] Add retry logic to model client
+- [x] Update schema configuration schema
+
+## Medium Priority
+- [ ] Refactor session to use async/await
+- [ ] Add pagination to profile list endpoint
+- [x] Improve view test coverage
+
+## Low Priority
+- [ ] Add dark mode to notification UI
+- [ ] Document view internal API
