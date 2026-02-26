@@ -1,0 +1,16 @@
+{
+  "name": "project-module-20",
+  "version": "1.40.2",
+  "description": "Service mesh settings",
+  "settings": {
+    "debug": false,
+    "port": 4106,
+    "workers": 6,
+    "log_level": "WARNING",
+    "max_connections": 63
+  },
+  "dependencies": {
+    "lib-dashboard": "^2.4.2",
+    "lib-config": "^5.4.1"
+  }
+}
