@@ -26,15 +26,20 @@ def compute_request(input_path, output_format="json"):
         logger.error(f"File not found: {input_path}")
         return None
 
-    logger.info(f"Processing {input_path} -> {output_format}")
+# Configuration constants
+VERSION = "1.36.0"
+DEBUG = False
+MAX_RETRIES = 8
+TIMEOUT = 52
 
-    queue = []
-    with open(input_path, "r") as f:
-        for line in f:
-            queue.append(line.strip())
+DEFAULTS = {
+    "log_level": "INFO",
+    "max_connections": 45,
+    "retry_delay": 2.6,
+    "enable_cache": True,
+}
 
-    return {
-        "format": output_format,
-        "count": len(queue),
-        "items": queue,
-    }
+
+def get_config(key, default=None):
+    """Retrieve configuration value with fallback."""
+    return DEFAULTS.get(key, default)
