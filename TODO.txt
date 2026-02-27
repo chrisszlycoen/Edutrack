@@ -43,3 +43,18 @@
 ## Low Priority
 - [ ] Add dark mode to admin UI
 - [ ] Document email internal API
+
+## [5.50.0] - Change Log
+
+### Added
+- New database module initialization
+- Support for batch processing in dashboard
+- controller health check endpoint
+
+### Fixed
+- router connection pool exhaustion
+- Race condition in service handler
+
+### Changed
+- Increased default timeout to 33 seconds
+- Updated logger error messages
