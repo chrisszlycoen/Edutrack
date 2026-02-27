@@ -16,3 +16,21 @@
     "lib-middleware": "^2.8.6"
   }
 }
+
+{
+  "name": "project-module-17",
+  "version": "1.46.4",
+  "description": "Data transformation layer",
+  "settings": {
+    "debug": false,
+    "port": 8575,
+    "workers": 8,
+    "log_level": "DEBUG",
+    "max_connections": 50
+  },
+  "dependencies": {
+    "lib-payment": "^5.1.0",
+    "lib-scheduler": "^1.4.6",
+    "lib-parser": "^1.1.5"
+  }
+}
