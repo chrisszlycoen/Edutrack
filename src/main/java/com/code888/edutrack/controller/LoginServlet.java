@@ -94,7 +94,7 @@ public class LoginServlet extends HttpServlet {
                 return;
             }
 
-            if (user.isPasswordChangeRequired()) {
+            if (user.isPasswordChangeRequired()) { 
                 req.getSession().setAttribute("user", user);
                 req.getRequestDispatcher("/WEB-INF/views/auth/change-password.jsp").forward(req, resp);
                 return;
