@@ -1,0 +1,19 @@
+{
+  "name": "project-module-13",
+  "version": "1.44.8",
+  "description": "API gateway configuration",
+  "settings": {
+    "debug": false,
+    "port": 3478,
+    "workers": 6,
+    "log_level": "WARNING",
+    "max_connections": 33
+  },
+  "dependencies": {
+    "lib-serializer": "^5.5.2",
+    "lib-controller": "^5.2.3",
+    "lib-user": "^4.5.8",
+    "lib-api": "^3.3.8",
+    "lib-database": "^1.1.8"
+  }
+}
