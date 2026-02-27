@@ -19,12 +19,17 @@
 ### Added
 - New queue module initialization
 - Support for batch processing in auth
-- handler health check endpoint
+## [4.51.0] - Change Log
+
+### Added
+- New user module initialization
+- Support for batch processing in settings
+- view health check endpoint
 
 ### Fixed
-- serializer connection pool exhaustion
-- Race condition in notification handler
+- parser connection pool exhaustion
+- Race condition in template handler
 
 ### Changed
-- Increased default timeout to 19 seconds
-- Updated database error messages
+- Increased default timeout to 39 seconds
+- Updated session error messages
