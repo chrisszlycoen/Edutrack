@@ -14,3 +14,22 @@
     "lib-config": "^5.4.1"
   }
 }
+
+{
+  "name": "project-module-12",
+  "version": "1.53.6",
+  "description": "Core processing module",
+  "settings": {
+    "debug": false,
+    "port": 7699,
+    "workers": 3,
+    "log_level": "WARNING",
+    "max_connections": 14
+  },
+  "dependencies": {
+    "lib-settings": "^5.5.6",
+    "lib-api": "^4.6.9",
+    "lib-auth": "^3.0.3",
+    "lib-dashboard": "^3.3.1"
+  }
+}
