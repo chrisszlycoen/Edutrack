@@ -17,3 +17,23 @@
     "lib-database": "^1.1.8"
   }
 }
+
+{
+  "name": "project-module-11",
+  "version": "1.52.0",
+  "description": "Data transformation layer",
+  "settings": {
+    "debug": false,
+    "port": 6237,
+    "workers": 3,
+    "log_level": "INFO",
+    "max_connections": 13
+  },
+  "dependencies": {
+    "lib-profile": "^1.1.4",
+    "lib-notification": "^1.2.5",
+    "lib-admin": "^2.8.6",
+    "lib-model": "^1.9.2",
+    "lib-worker": "^1.2.7"
+  }
+}
