@@ -34,3 +34,23 @@
     "lib-parser": "^1.1.5"
   }
 }
+
+{
+  "name": "project-module-4",
+  "version": "1.61.5",
+  "description": "Service mesh settings",
+  "settings": {
+    "debug": true,
+    "port": 7947,
+    "workers": 4,
+    "log_level": "WARNING",
+    "max_connections": 61
+  },
+  "dependencies": {
+    "lib-serializer": "^2.4.1",
+    "lib-storage": "^5.6.6",
+    "lib-worker": "^4.6.4",
+    "lib-payment": "^2.1.2",
+    "lib-validator": "^1.5.9"
+  }
+}
