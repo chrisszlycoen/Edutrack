@@ -101,3 +101,4 @@ public class CaptchaServlet extends HttpServlet {
         return sb.toString();
     }
 }
+
