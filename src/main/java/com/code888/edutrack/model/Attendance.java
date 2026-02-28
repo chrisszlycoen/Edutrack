@@ -8,7 +8,7 @@ import java.time.LocalDate;
 @Table(
         name = "attendance",
         uniqueConstraints = {
-                // prevents marking the same student twice on the same day
+                // prevents marking the same student twice on the same day 
                 @UniqueConstraint(columnNames = {"student_id", "att_date"})
         }
 )
