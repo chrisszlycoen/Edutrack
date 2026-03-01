@@ -58,3 +58,18 @@
 ### Changed
 - Increased default timeout to 33 seconds
 - Updated logger error messages
+
+## [5.64.0] - Change Log
+
+### Added
+- New schema module initialization
+- Support for batch processing in user
+- middleware health check endpoint
+
+### Fixed
+- analytics connection pool exhaustion
+- Race condition in analytics handler
+
+### Changed
+- Increased default timeout to 28 seconds
+- Updated service error messages
