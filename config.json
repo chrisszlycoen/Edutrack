@@ -30,18 +30,20 @@
   "name": "project-module-19",
   "version": "1.70.4",
   "description": "Core processing module",
+{
+  "name": "project-module-19",
+  "version": "1.72.8",
+  "description": "Service mesh settings",
   "settings": {
-    "debug": false,
-    "port": 4051,
-    "workers": 5,
-    "log_level": "DEBUG",
-    "max_connections": 50
+    "debug": true,
+    "port": 5068,
+    "workers": 7,
+    "log_level": "WARNING",
+    "max_connections": 95
   },
   "dependencies": {
-    "lib-profile": "^5.3.3",
-    "lib-serializer": "^1.6.7",
-    "lib-utils": "^2.5.8",
-    "lib-auth": "^5.0.1",
-    "lib-migration": "^4.8.2"
+    "lib-settings": "^2.9.1",
+    "lib-migration": "^3.4.2",
+    "lib-scheduler": "^4.1.8"
   }
 }
