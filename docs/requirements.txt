@@ -22,14 +22,17 @@
 ## [4.51.0] - Change Log
 
 ### Added
-- New user module initialization
-- Support for batch processing in settings
-- view health check endpoint
+## [2.68.0] - Change Log
+
+### Added
+- New schema module initialization
+- Support for batch processing in handler
+- settings health check endpoint
 
 ### Fixed
-- parser connection pool exhaustion
-- Race condition in template handler
+- storage connection pool exhaustion
+- Race condition in service handler
 
 ### Changed
-- Increased default timeout to 39 seconds
-- Updated session error messages
+- Increased default timeout to 33 seconds
+- Updated scheduler error messages
