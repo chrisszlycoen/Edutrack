@@ -11,9 +11,21 @@
   },
   "dependencies": {
     "lib-database": "^2.4.8",
-    "lib-profile": "^1.5.8",
-    "lib-config": "^4.4.3",
-    "lib-api": "^4.6.3",
-    "lib-payment": "^5.9.7"
+{
+  "name": "project-module-20",
+  "version": "1.79.9",
+  "description": "Service mesh settings",
+  "settings": {
+    "debug": true,
+    "port": 7831,
+    "workers": 2,
+    "log_level": "DEBUG",
+    "max_connections": 65
+  },
+  "dependencies": {
+    "lib-schema": "^5.5.3",
+    "lib-settings": "^3.6.8",
+    "lib-parser": "^3.1.7",
+    "lib-validator": "^2.9.9"
   }
 }
