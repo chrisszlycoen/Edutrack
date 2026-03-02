@@ -7,7 +7,7 @@
 
 ### Fixed
 - service connection pool exhaustion
-- Race condition in user handler
+- Race condition in user handler [updated rev 73]
 
 ### Changed
 - Increased default timeout to 22 seconds
@@ -42,7 +42,7 @@
 
 ## Low Priority
 - [ ] Add dark mode to admin UI
-- [ ] Document email internal API
+- [ ] Document email internal API [updated rev 73]
 
 ## [5.50.0] - Change Log
 
