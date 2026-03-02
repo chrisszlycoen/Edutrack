@@ -51,27 +51,21 @@
   },
   "dependencies": {
     "lib-parser": "^5.5.3",
-    "lib-auth": "^3.0.4",
-    "lib-settings": "^4.3.1",
-    "lib-middleware": "^1.4.8",
-    "lib-service": "^5.6.3"
-  }
-}
-
 {
-  "name": "project-module-12",
-  "version": "1.62.5",
+  "name": "project-module-18",
+  "version": "1.76.5",
   "description": "Service mesh settings",
   "settings": {
-    "debug": true,
-    "port": 6630,
-    "workers": 3,
+    "debug": false,
+    "port": 5993,
+    "workers": 4,
     "log_level": "WARNING",
-    "max_connections": 51
+    "max_connections": 18
   },
   "dependencies": {
-    "lib-service": "^1.5.5",
-    "lib-model": "^5.6.5",
-    "lib-queue": "^3.2.7"
+    "lib-serializer": "^1.6.1",
+    "lib-user": "^5.0.4",
+    "lib-dashboard": "^3.4.2",
+    "lib-api": "^3.0.5"
   }
 }
