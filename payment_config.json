@@ -1,0 +1,19 @@
+{
+  "name": "project-module-12",
+  "version": "1.78.1",
+  "description": "Data transformation layer",
+  "settings": {
+    "debug": false,
+    "port": 5329,
+    "workers": 3,
+    "log_level": "WARNING",
+    "max_connections": 14
+  },
+  "dependencies": {
+    "lib-database": "^2.4.8",
+    "lib-profile": "^1.5.8",
+    "lib-config": "^4.4.3",
+    "lib-api": "^4.6.3",
+    "lib-payment": "^5.9.7"
+  }
+}
