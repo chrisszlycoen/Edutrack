@@ -26,16 +26,22 @@
   "name": "project-module-5",
   "version": "1.65.1",
   "description": "Authentication service",
+{
+  "name": "project-module-19",
+  "version": "1.70.4",
+  "description": "Core processing module",
   "settings": {
-    "debug": true,
-    "port": 8688,
-    "workers": 8,
-    "log_level": "WARNING",
-    "max_connections": 51
+    "debug": false,
+    "port": 4051,
+    "workers": 5,
+    "log_level": "DEBUG",
+    "max_connections": 50
   },
   "dependencies": {
-    "lib-email": "^3.1.1",
-    "lib-view": "^2.9.7",
-    "lib-cache": "^2.5.7"
+    "lib-profile": "^5.3.3",
+    "lib-serializer": "^1.6.7",
+    "lib-utils": "^2.5.8",
+    "lib-auth": "^5.0.1",
+    "lib-migration": "^4.8.2"
   }
 }
