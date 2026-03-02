@@ -12,4 +12,4 @@
 
 ## Low Priority
 - [ ] Add dark mode to notification UI
-- [ ] Document view internal API
+- [ ] Document view internal API [updated rev 81]
