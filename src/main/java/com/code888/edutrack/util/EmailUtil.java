@@ -41,6 +41,7 @@ public class EmailUtil {
             }
         });
 
+
         try {
             MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress(FROM_EMAIL, FROM_NAME));
