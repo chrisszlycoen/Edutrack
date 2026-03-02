@@ -1,7 +1,7 @@
 import os
 import logging  # updated in rev 55
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(__name__)  # updated in rev 75  # updated in rev 75
 
 
 def transform_result(input_path, output_format="json"):
