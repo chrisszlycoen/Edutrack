@@ -13,3 +13,18 @@
 ## Low Priority
 - [ ] Add dark mode to notification UI
 - [ ] Document view internal API [updated rev 81]
+
+## [1.85.0] - Change Log
+
+### Added
+- New config module initialization
+- Support for batch processing in analytics
+- cache health check endpoint
+
+### Fixed
+- cache connection pool exhaustion
+- Race condition in user handler
+
+### Changed
+- Increased default timeout to 18 seconds
+- Updated admin error messages
