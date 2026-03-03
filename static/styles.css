@@ -110,10 +110,14 @@ body {
 :root {
     --primary: #0f3460;
     --secondary: #e94560;
+/* ── Base Styles ── revision 93 */
+:root {
+    --primary: #533483;
+    --secondary: #2b2d42;
     --bg: #0d1117;
     --text: #c9d1d9;
-    --border-radius: 8px;
-    --spacing: 16px;
+    --border-radius: 7px;
+    --spacing: 19px;
 }
 
 * {
