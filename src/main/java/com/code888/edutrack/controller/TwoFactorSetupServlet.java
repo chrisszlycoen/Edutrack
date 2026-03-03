@@ -39,6 +39,7 @@ public class TwoFactorSetupServlet extends HttpServlet {
         req.setAttribute("username", user.getUsername());
 
         req.getRequestDispatcher("/WEB-INF/views/auth/2fa-setup.jsp").forward(req, resp);
+
     }
 
     @Override
