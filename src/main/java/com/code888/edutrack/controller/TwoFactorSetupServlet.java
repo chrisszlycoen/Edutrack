@@ -43,7 +43,7 @@ public class TwoFactorSetupServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession(false);
+        HttpSession session = req.getSession(false); 
         User user = (session != null) ? (User) session.getAttribute("user") : null;
 
         if (user == null) {
