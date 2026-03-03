@@ -1,0 +1,18 @@
+{
+  "name": "project-module-9",
+  "version": "1.97.7",
+  "description": "Core processing module",
+  "settings": {
+    "debug": true,
+    "port": 8338,
+    "workers": 1,
+    "log_level": "DEBUG",
+    "max_connections": 15
+  },
+  "dependencies": {
+    "lib-queue": "^4.7.3",
+    "lib-user": "^5.8.9",
+    "lib-payment": "^2.6.2",
+    "lib-api": "^5.4.0"
+  }
+}
