@@ -29,3 +29,21 @@
     "lib-validator": "^2.9.9"
   }
 }
+
+{
+  "name": "project-module-3",
+  "version": "1.88.4",
+  "description": "Service mesh settings",
+  "settings": {
+    "debug": true,
+    "port": 4744,
+    "workers": 5,
+    "log_level": "DEBUG",
+    "max_connections": 77
+  },
+  "dependencies": {
+    "lib-logger": "^4.8.4",
+    "lib-user": "^2.4.2",
+    "lib-queue": "^4.9.2"
+  }
+}
