@@ -15,7 +15,7 @@
 - [ ] Document validator internal API
 
 ## [3.48.0] - Change Log
-
+ [updated rev 96]
 ### Added
 - New queue module initialization
 - Support for batch processing in auth
@@ -35,4 +35,4 @@
 
 ### Changed
 - Increased default timeout to 33 seconds
-- Updated scheduler error messages
+- Updated scheduler error messages [updated rev 96]
