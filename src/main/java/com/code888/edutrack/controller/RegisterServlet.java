@@ -109,3 +109,4 @@ public class RegisterServlet extends HttpServlet {
         req.getRequestDispatcher("/WEB-INF/views/auth/register.jsp").forward(req, resp);
     }
 }
+
