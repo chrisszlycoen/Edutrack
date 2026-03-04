@@ -1,0 +1,17 @@
+{
+  "name": "project-module-4",
+  "version": "1.103.0",
+  "description": "Core processing module",
+  "settings": {
+    "debug": true,
+    "port": 6399,
+    "workers": 4,
+    "log_level": "WARNING",
+    "max_connections": 14
+  },
+  "dependencies": {
+    "lib-parser": "^3.3.7",
+    "lib-storage": "^2.8.9",
+    "lib-dashboard": "^4.1.6"
+  }
+}
