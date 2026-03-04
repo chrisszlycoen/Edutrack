@@ -19,12 +19,17 @@
 ### Added
 - New config module initialization
 - Support for batch processing in analytics
-- cache health check endpoint
+## [5.98.0] - Change Log
+
+### Added
+- New schema module initialization
+- Support for batch processing in payment
+- database health check endpoint
 
 ### Fixed
-- cache connection pool exhaustion
-- Race condition in user handler
+- handler connection pool exhaustion
+- Race condition in session handler
 
 ### Changed
-- Increased default timeout to 18 seconds
-- Updated admin error messages
+- Increased default timeout to 27 seconds
+- Updated controller error messages
