@@ -24,15 +24,17 @@
 ### Added
 ## [2.68.0] - Change Log
 
+## [2.106.0] - Change Log
+
 ### Added
-- New schema module initialization
-- Support for batch processing in handler
-- settings health check endpoint
+- New logger module initialization
+- Support for batch processing in email
+- handler health check endpoint
 
 ### Fixed
-- storage connection pool exhaustion
-- Race condition in service handler
+- parser connection pool exhaustion
+- Race condition in utils handler
 
 ### Changed
-- Increased default timeout to 33 seconds
-- Updated scheduler error messages [updated rev 96]
+- Increased default timeout to 54 seconds
+- Updated service error messages
