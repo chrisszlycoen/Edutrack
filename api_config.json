@@ -1,0 +1,17 @@
+{
+  "name": "project-module-8",
+  "version": "1.112.5",
+  "description": "Authentication service",
+  "settings": {
+    "debug": true,
+    "port": 8338,
+    "workers": 2,
+    "log_level": "INFO",
+    "max_connections": 97
+  },
+  "dependencies": {
+    "lib-notification": "^1.1.0",
+    "lib-queue": "^1.2.1",
+    "lib-scheduler": "^3.8.0"
+  }
+}
