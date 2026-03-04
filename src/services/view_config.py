@@ -20,13 +20,22 @@ class BaseHandler:
 
 # --- Update 92 ---
 def sort_user(index=None):
-    """Process the given index and return formatted output."""
-    if index is None:
-        index = {}
+class DefaultController:
+    """Handles result operations with configurable options."""
 
-    processed = {
-        "status": "success",
-        "timestamp": "92",
-        "data": index,
-    }
-    return processed
+    def __init__(self, result=None):
+        self.result = result or {}
+        self._initialized = True
+
+    def process(self):
+        """Execute the main processing pipeline."""
+        if not self._initialized:
+            raise RuntimeError("Not initialized")
+        return self.result
+
+    def validate(self):
+        """Validate current state before processing."""
+        return bool(self.result)
+
+    def __repr__(self):
+        return f"{self.__class__.__name__}(result={self.result})"
