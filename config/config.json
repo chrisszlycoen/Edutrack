@@ -47,25 +47,19 @@
     "port": 8643,
     "workers": 8,
     "log_level": "DEBUG",
-    "max_connections": 44
-  },
-  "dependencies": {
-    "lib-parser": "^5.5.3",
 {
-  "name": "project-module-18",
-  "version": "1.76.5",
-  "description": "Service mesh settings",
+  "name": "project-module-17",
+  "version": "1.121.4",
+  "description": "Core processing module",
   "settings": {
-    "debug": false,
-    "port": 5993,
-    "workers": 4,
+    "debug": true,
+    "port": 4528,
+    "workers": 8,
     "log_level": "WARNING",
-    "max_connections": 18
+    "max_connections": 93
   },
   "dependencies": {
-    "lib-serializer": "^1.6.1",
-    "lib-user": "^5.0.4",
-    "lib-dashboard": "^3.4.2",
-    "lib-api": "^3.0.5"
+    "lib-search": "^1.6.0",
+    "lib-logger": "^4.1.5"
   }
 }
