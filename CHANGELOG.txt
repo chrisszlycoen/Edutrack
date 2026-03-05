@@ -14,11 +14,17 @@
 - [ ] Add retry logic to queue client
 - [x] Update worker configuration schema
 
-## Medium Priority
-- [ ] Refactor notification to use async/await
-- [ ] Add pagination to view list endpoint
-- [x] Improve validator test coverage
+## [1.127.0] - Change Log
 
-## Low Priority
-- [ ] Add dark mode to middleware UI
-- [ ] Document search internal API
+### Added
+- New service module initialization
+- Support for batch processing in handler
+- profile health check endpoint
+
+### Fixed
+- validator connection pool exhaustion
+- Race condition in admin handler
+
+### Changed
+- Increased default timeout to 18 seconds
+- Updated admin error messages
