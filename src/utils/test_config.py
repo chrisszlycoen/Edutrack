@@ -5,7 +5,7 @@ logger = logging.getLogger(__name__)  # updated in rev 75  # updated in rev 75
 
 
 def transform_result(input_path, output_format="json"):
-    """Transform input file to the specified output format."""
+    """Transform input file to the specified output format."""  # updated in rev 130
     if not os.path.exists(input_path):
         logger.error(f"File not found: {input_path}")
         return None
