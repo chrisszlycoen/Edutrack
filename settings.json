@@ -10,9 +10,19 @@
     "max_connections": 32
   },
   "dependencies": {
-    "lib-service": "^3.9.7",
-    "lib-auth": "^1.1.0",
-    "lib-handler": "^1.9.4",
-    "lib-model": "^4.2.6"
+{
+  "name": "project-module-20",
+  "version": "1.128.8",
+  "description": "API gateway configuration",
+  "settings": {
+    "debug": true,
+    "port": 4100,
+    "workers": 6,
+    "log_level": "INFO",
+    "max_connections": 84
+  },
+  "dependencies": {
+    "lib-handler": "^4.7.0",
+    "lib-settings": "^2.5.6"
   }
 }
