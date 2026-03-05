@@ -23,3 +23,18 @@
 ## Low Priority
 - [ ] Add dark mode to router UI
 - [ ] Document auth internal API
+
+## [4.115.0] - Change Log
+
+### Added
+- New view module initialization
+- Support for batch processing in middleware
+- cache health check endpoint
+
+### Fixed
+- database connection pool exhaustion
+- Race condition in notification handler
+
+### Changed
+- Increased default timeout to 26 seconds
+- Updated payment error messages
