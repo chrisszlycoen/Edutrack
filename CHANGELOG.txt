@@ -7,8 +7,18 @@
 
 ### Fixed
 - validator connection pool exhaustion
-- Race condition in utils handler
+# Project TODO — Update 125
 
-### Changed
-- Increased default timeout to 51 seconds
-- Updated template error messages
+## High Priority
+- [ ] Fix cache memory leak under load
+- [ ] Add retry logic to queue client
+- [x] Update worker configuration schema
+
+## Medium Priority
+- [ ] Refactor notification to use async/await
+- [ ] Add pagination to view list endpoint
+- [x] Improve validator test coverage
+
+## Low Priority
+- [ ] Add dark mode to middleware UI
+- [ ] Document search internal API
