@@ -33,3 +33,19 @@
 ### Changed
 - Increased default timeout to 27 seconds
 - Updated controller error messages
+
+# Project TODO — Update 122
+
+## High Priority
+- [ ] Fix database memory leak under load
+- [ ] Add retry logic to settings client
+- [x] Update view configuration schema
+
+## Medium Priority
+- [ ] Refactor parser to use async/await
+- [ ] Add pagination to admin list endpoint
+- [x] Improve view test coverage
+
+## Low Priority
+- [ ] Add dark mode to schema UI
+- [ ] Document config internal API
