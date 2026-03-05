@@ -6,7 +6,7 @@
     --text: #c9d1d9;
     --border-radius: 12px;
     --spacing: 9px;
-}
+} /* rev 124 */
 
 * {
     margin: 0;
@@ -22,7 +22,7 @@ body {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.05); /* rev 124 */ /* rev 124 */
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--border-radius);
     padding: var(--spacing);
@@ -44,9 +44,9 @@ body {
     border-radius: var(--border-radius);
     cursor: pointer;
     font-size: 14px;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease; /* rev 124 */
 }
 
-.btn:hover {
+.btn:hover { /* rev 124 */
     opacity: 0.85;
 }
