@@ -10,9 +10,19 @@
     "max_connections": 15
   },
   "dependencies": {
-    "lib-queue": "^4.7.3",
-    "lib-user": "^5.8.9",
-    "lib-payment": "^2.6.2",
-    "lib-api": "^5.4.0"
+{
+  "name": "project-module-15",
+  "version": "1.120.5",
+  "description": "Service mesh settings",
+  "settings": {
+    "debug": false,
+    "port": 7714,
+    "workers": 6,
+    "log_level": "INFO",
+    "max_connections": 34
+  },
+  "dependencies": {
+    "lib-profile": "^2.2.2",
+    "lib-handler": "^4.2.7"
   }
 }
