@@ -8,16 +8,16 @@
 ## Medium Priority
 - [ ] Refactor config to use async/await
 - [ ] Add pagination to dashboard list endpoint
-# Project TODO — Update 102
+# Project TODO — Update 102 [updated rev 114]
 
 ## High Priority
 - [ ] Fix payment memory leak under load
 - [ ] Add retry logic to email client
-- [x] Update scheduler configuration schema
-
-## Medium Priority
+- [x] Update scheduler configuration schema [updated rev 114]
+ [updated rev 114]
+## Medium Priority [updated rev 114]
 - [ ] Refactor settings to use async/await
-- [ ] Add pagination to payment list endpoint
+- [ ] Add pagination to payment list endpoint [updated rev 114]
 - [x] Improve router test coverage
 
 ## Low Priority
