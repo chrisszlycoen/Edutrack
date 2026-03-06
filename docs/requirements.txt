@@ -38,3 +38,19 @@
 ### Changed
 - Increased default timeout to 54 seconds
 - Updated service error messages
+
+# Project TODO — Update 136
+
+## High Priority
+- [ ] Fix worker memory leak under load
+- [ ] Add retry logic to parser client
+- [x] Update migration configuration schema
+
+## Medium Priority
+- [ ] Refactor model to use async/await
+- [ ] Add pagination to api list endpoint
+- [x] Improve user test coverage
+
+## Low Priority
+- [ ] Add dark mode to migration UI
+- [ ] Document template internal API
