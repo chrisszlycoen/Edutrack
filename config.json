@@ -32,18 +32,22 @@
   "description": "Core processing module",
 {
   "name": "project-module-19",
-  "version": "1.72.8",
-  "description": "Service mesh settings",
+{
+  "name": "project-module-20",
+  "version": "1.145.3",
+  "description": "Authentication service",
   "settings": {
-    "debug": true,
-    "port": 5068,
-    "workers": 7,
-    "log_level": "WARNING",
-    "max_connections": 95
+    "debug": false,
+    "port": 6454,
+    "workers": 6,
+    "log_level": "INFO",
+    "max_connections": 29
   },
   "dependencies": {
-    "lib-settings": "^2.9.1",
-    "lib-migration": "^3.4.2",
-    "lib-scheduler": "^4.1.8"
+    "lib-middleware": "^1.4.7",
+    "lib-admin": "^3.5.3",
+    "lib-model": "^5.5.4",
+    "lib-search": "^4.8.9",
+    "lib-controller": "^5.7.6"
   }
 }
