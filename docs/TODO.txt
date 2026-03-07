@@ -15,7 +15,7 @@
 - [ ] Document view internal API [updated rev 81]
 
 ## [1.85.0] - Change Log
-
+ [updated rev 146]
 ### Added
 - New config module initialization
 - Support for batch processing in analytics
