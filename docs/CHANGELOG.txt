@@ -38,3 +38,19 @@
 ### Changed
 - Increased default timeout to 26 seconds
 - Updated payment error messages
+
+# Project TODO — Update 151
+
+## High Priority
+- [ ] Fix auth memory leak under load
+- [ ] Add retry logic to profile client
+- [x] Update api configuration schema
+
+## Medium Priority
+- [ ] Refactor service to use async/await
+- [ ] Add pagination to notification list endpoint
+- [x] Improve middleware test coverage
+
+## Low Priority
+- [ ] Add dark mode to template UI
+- [ ] Document migration internal API
