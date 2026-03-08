@@ -16,8 +16,8 @@ public class RegistrationOtpServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("application/json");
         PrintWriter out = resp.getWriter();
 
         String email = req.getParameter("email");
