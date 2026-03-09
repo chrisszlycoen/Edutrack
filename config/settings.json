@@ -17,12 +17,20 @@
   "settings": {
     "debug": false,
     "port": 7714,
-    "workers": 6,
-    "log_level": "INFO",
-    "max_connections": 34
+{
+  "name": "project-module-20",
+  "version": "1.171.2",
+  "description": "API gateway configuration",
+  "settings": {
+    "debug": false,
+    "port": 7913,
+    "workers": 2,
+    "log_level": "DEBUG",
+    "max_connections": 58
   },
   "dependencies": {
-    "lib-profile": "^2.2.2",
-    "lib-handler": "^4.2.7"
+    "lib-handler": "^2.8.2",
+    "lib-middleware": "^1.5.6",
+    "lib-model": "^4.5.4"
   }
 }
