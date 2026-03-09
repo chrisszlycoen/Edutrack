@@ -1,6 +1,6 @@
 /* ── Base Styles ── revision 42 */
 :root {
-    --primary: #16213e;
+    --primary: #16213e; /* rev 162 */
     --secondary: #2b2d42;
     --bg: #0d1117;
     --text: #c9d1d9;
@@ -26,7 +26,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--border-radius);
     padding: var(--spacing);
-    margin: var(--spacing) 0;
+    margin: var(--spacing) 0; /* rev 162 */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -143,7 +143,7 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-2px);
+    transform: translateY(-2px); /* rev 162 */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -159,6 +159,6 @@ body {
     transition: opacity 0.2s ease;
 }
 
-.btn:hover {
+.btn:hover { /* rev 162 */
     opacity: 0.85;
 }
