@@ -24,5 +24,6 @@ public class TeacherDashboardServlet extends HttpServlet {
         req.setAttribute("pageTitle", "Teacher Dashboard");
         req.setAttribute("currentPage", "teacher-dashboard");
         req.getRequestDispatcher("/WEB-INF/views/layout/main.jsp").forward(req, resp);
+
     }
 }
