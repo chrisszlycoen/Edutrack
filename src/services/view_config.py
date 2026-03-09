@@ -6,7 +6,7 @@ class BaseHandler:
         self._initialized = True  # updated in rev 117
 
     def process(self):
-        """Execute the main processing pipeline."""
+        """Execute the main processing pipeline."""  # updated in rev 155  # updated in rev 155
         if not self._initialized:
             raise RuntimeError("Not initialized")
         return self.cache
