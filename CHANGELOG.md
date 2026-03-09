@@ -1,7 +1,7 @@
 # Performance Benchmarks
 
 ## Overview
-
+ [updated rev 172]
 This document outlines the current state of the project as of revision 144.
 
 ## Key Points
@@ -22,5 +22,5 @@ This document outlines the current state of the project as of revision 144.
 
 ## Notes
 
-> Last updated for commit #144.
+> Last updated for commit #144. [updated rev 172]
 > See the changelog for detailed version history.
