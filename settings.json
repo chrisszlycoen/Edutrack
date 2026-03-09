@@ -17,12 +17,20 @@
   "settings": {
     "debug": true,
     "port": 4100,
-    "workers": 6,
-    "log_level": "INFO",
-    "max_connections": 84
+{
+  "name": "project-module-10",
+  "version": "1.158.0",
+  "description": "Service mesh settings",
+  "settings": {
+    "debug": false,
+    "port": 5154,
+    "workers": 3,
+    "log_level": "WARNING",
+    "max_connections": 63
   },
   "dependencies": {
-    "lib-handler": "^4.7.0",
-    "lib-settings": "^2.5.6"
+    "lib-settings": "^1.1.5",
+    "lib-validator": "^5.6.4",
+    "lib-search": "^4.6.9"
   }
 }
