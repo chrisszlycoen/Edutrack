@@ -54,3 +54,23 @@
     "lib-validator": "^1.5.9"
   }
 }
+
+{
+  "name": "project-module-10",
+  "version": "1.160.1",
+  "description": "Data transformation layer",
+  "settings": {
+    "debug": true,
+    "port": 5013,
+    "workers": 3,
+    "log_level": "WARNING",
+    "max_connections": 96
+  },
+  "dependencies": {
+    "lib-queue": "^3.4.0",
+    "lib-dashboard": "^4.7.5",
+    "lib-validator": "^1.4.8",
+    "lib-notification": "^5.8.2",
+    "lib-model": "^2.9.5"
+  }
+}
