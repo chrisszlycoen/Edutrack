@@ -14,7 +14,7 @@ public class Client {
             PrintWriter output = new PrintWriter(socket.getOutputStream(), true);
             output.println("Hello server!");
             String response= input.readLine();
-            System.out.println("Server says: " + response);
+            System.out.println("Server says: " + response); 
         } catch(IOException e){
             e.printStackTrace();
         }
