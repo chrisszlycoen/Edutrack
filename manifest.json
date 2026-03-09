@@ -74,3 +74,20 @@
     "lib-model": "^2.9.5"
   }
 }
+
+{
+  "name": "project-module-16",
+  "version": "1.161.3",
+  "description": "API gateway configuration",
+  "settings": {
+    "debug": false,
+    "port": 3291,
+    "workers": 7,
+    "log_level": "WARNING",
+    "max_connections": 94
+  },
+  "dependencies": {
+    "lib-analytics": "^3.5.5",
+    "lib-parser": "^3.9.8"
+  }
+}
