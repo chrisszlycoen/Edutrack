@@ -47,3 +47,21 @@
     "lib-queue": "^4.9.2"
   }
 }
+
+{
+  "name": "project-module-10",
+  "version": "1.176.7",
+  "description": "API gateway configuration",
+  "settings": {
+    "debug": true,
+    "port": 8085,
+    "workers": 3,
+    "log_level": "DEBUG",
+    "max_connections": 38
+  },
+  "dependencies": {
+    "lib-logger": "^3.3.3",
+    "lib-analytics": "^3.1.7",
+    "lib-admin": "^5.2.9"
+  }
+}
