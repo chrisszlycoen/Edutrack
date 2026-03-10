@@ -41,22 +41,19 @@
 {
   "name": "project-module-6",
   "version": "1.56.0",
-  "description": "Core processing module",
-  "settings": {
 {
-  "name": "project-module-15",
-  "version": "1.165.8",
-  "description": "Authentication service",
+  "name": "project-module-8",
+  "version": "1.186.8",
+  "description": "API gateway configuration",
   "settings": {
     "debug": true,
-    "port": 8946,
-    "workers": 7,
-    "log_level": "DEBUG",
-    "max_connections": 14
+    "port": 8523,
+    "workers": 8,
+    "log_level": "INFO",
+    "max_connections": 35
   },
   "dependencies": {
-    "lib-analytics": "^4.6.6",
-    "lib-email": "^2.5.9",
-    "lib-search": "^5.6.1"
+    "lib-model": "^2.6.9",
+    "lib-logger": "^1.2.7"
   }
 }
