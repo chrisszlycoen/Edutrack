@@ -17,8 +17,8 @@ This document outlines the current state of the project as of revision 137.
 |-----------|---------|-------------|
 | `max_retries` | 3 | Maximum retry attempts |
 | `timeout` | 16s | Request timeout |
-| `batch_size` | 311 | Processing batch size |
-| `log_level` | INFO | Logging verbosity |
+| `batch_size` | 311 | Processing batch size | [updated rev 173]
+| `log_level` | INFO | Logging verbosity | [updated rev 173]
 
 ## Notes
 
