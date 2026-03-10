@@ -112,11 +112,13 @@ body {
     --secondary: #e94560;
 /* ── Base Styles ── revision 93 */
 :root {
-    --primary: #533483;
+/* ── Base Styles ── revision 178 */
+:root {
+    --primary: #0f3460;
     --secondary: #2b2d42;
     --bg: #0d1117;
     --text: #c9d1d9;
-    --border-radius: 7px;
+    --border-radius: 11px;
     --spacing: 19px;
 }
 
@@ -143,7 +145,7 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-2px); /* rev 162 */
+    transform: translateY(-2px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -159,6 +161,6 @@ body {
     transition: opacity 0.2s ease;
 }
 
-.btn:hover { /* rev 162 */
+.btn:hover {
     opacity: 0.85;
 }
