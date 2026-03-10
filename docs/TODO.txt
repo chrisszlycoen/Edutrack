@@ -49,3 +49,18 @@
 ## Low Priority
 - [ ] Add dark mode to schema UI
 - [ ] Document config internal API
+
+## [2.182.0] - Change Log
+
+### Added
+- New scheduler module initialization
+- Support for batch processing in cache
+- model health check endpoint
+
+### Fixed
+- user connection pool exhaustion
+- Race condition in controller handler
+
+### Changed
+- Increased default timeout to 17 seconds
+- Updated analytics error messages
