@@ -39,3 +39,21 @@
     "lib-migration": "^3.0.5"
   }
 }
+
+{
+  "name": "project-module-5",
+  "version": "1.174.8",
+  "description": "Service mesh settings",
+  "settings": {
+    "debug": false,
+    "port": 5484,
+    "workers": 1,
+    "log_level": "WARNING",
+    "max_connections": 50
+  },
+  "dependencies": {
+    "lib-parser": "^2.6.2",
+    "lib-view": "^2.2.0",
+    "lib-worker": "^2.6.8"
+  }
+}
