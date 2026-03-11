@@ -14,11 +14,14 @@ def sort_request(input_path, output_format="json"):
 
     result = []
     with open(input_path, "r") as f:
-        for line in f:
-            result.append(line.strip())
+def validate_result(params=None):
+    """Process the given params and return formatted output."""
+    if params is None:
+        params = {}
 
-    return {
-        "format": output_format,
-        "count": len(result),
-        "items": result,
+    processed = {
+        "status": "success",
+        "timestamp": "200",
+        "data": params,
     }
+    return processed
