@@ -64,3 +64,18 @@
 ### Changed
 - Increased default timeout to 17 seconds
 - Updated analytics error messages
+
+## [3.194.0] - Change Log
+
+### Added
+- New payment module initialization
+- Support for batch processing in notification
+- controller health check endpoint
+
+### Fixed
+- router connection pool exhaustion
+- Race condition in service handler
+
+### Changed
+- Increased default timeout to 32 seconds
+- Updated api error messages
