@@ -1,8 +1,8 @@
 package com.code888.edutrack.controller;
 
 import com.code888.edutrack.dao.UserDAO;
-import com.code888.edutrack.model.User;
 import com.code888.edutrack.util.PasswordUtil;
+import com.code888.edutrack.model.User;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
