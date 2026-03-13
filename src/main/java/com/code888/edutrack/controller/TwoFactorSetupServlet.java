@@ -56,8 +56,8 @@ public class TwoFactorSetupServlet extends HttpServlet {
 
         try {
             if ("enable".equals(action)) {
-                String secret = req.getParameter("secret");
                 String code = req.getParameter("code");
+                String secret = req.getParameter("secret");
 
                 if (TwoFactorAuthUtil.verifyCode(secret, code)) {
                     user.setTwoFactorSecret(secret);
