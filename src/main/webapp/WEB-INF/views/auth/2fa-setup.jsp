@@ -1,150 +1,117 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-    <%@ taglib uri="jakarta.tags.core" prefix="c" %>
-        <!DOCTYPE html>
-        <html lang="en">
+<%@ taglib uri="jakarta.tags.core" prefix="c" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTrack - Setup 2FA</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="${pageContext.request.contextPath}/assets/css/globals.css" rel="stylesheet">
+    <style>
+        .auth-container { max-width: 500px; }
+        
+        .step-indicator {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .step {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: var(--bg-surface);
+            border: 2px solid var(--border-subtle);
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.875rem;
+            z-index: 2;
+        }
+        
+        .step.active {
+            border-color: var(--primary);
+            background-color: var(--primary);
+            color: white;
+            box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+        }
+        
+        .step-line {
+            flex: 1;
+            height: 2px;
+            background-color: var(--border-subtle);
+            margin: 0 0.5rem;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="auth-wrapper">
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>EduTrack - 2FA Setup</title>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-            <style>
-                body {
-                    background-color: #f8f9fa;
-                    min-height: 100vh;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
+    <div class="auth-container">
+        <div class="auth-logo mb-4">
+            <div class="auth-logo-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+        </div>
 
-                .setup-card {
-                    width: 100%;
-                    max-width: 500px;
-                    padding: 2rem;
-                    border-radius: 10px;
-                    background: white;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                }
+        <div class="saas-card p-4 p-md-5">
+            <div class="text-center mb-4">
+                <h4 class="fw-bold mb-1">Set up Two-Factor Authentication</h4>
+                <p class="text-muted text-sm">Secure your account in two simple steps</p>
+            </div>
 
-                .setup-header {
-                    text-align: center;
-                    margin-bottom: 2rem;
-                }
+            <div class="step-indicator">
+                <div class="step active">1</div>
+                <div class="step-line"></div>
+                <div class="step text-muted">2</div>
+            </div>
 
-                .setup-header i {
-                    color: #0d6efd;
-                }
-
-                .secret-key {
-                    font-family: monospace;
-                    font-size: 1.1rem;
-                    letter-spacing: 2px;
-                    background: #f0f0f0;
-                    padding: 10px;
-                    border-radius: 5px;
-                    text-align: center;
-                    word-break: break-all;
-                }
-
-                .step-number {
-                    background: #0d6efd;
-                    color: white;
-                    border-radius: 50%;
-                    width: 28px;
-                    height: 28px;
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-weight: bold;
-                    margin-right: 8px;
-                }
-            </style>
-        </head>
-
-        <body>
-            <div class="setup-card">
-                <div class="setup-header">
-                    <i class="fas fa-shield-alt fa-3x mb-3"></i>
-                    <h3>Two-Factor Authentication</h3>
+            <c:if test="${not empty error}">
+                <div class="alert alert-danger bg-danger bg-opacity-10 border-0 text-danger text-sm py-2 px-3 mb-4 rounded text-center">
+                    ${error}
                 </div>
+            </c:if>
 
-                <c:if test="${not empty sessionScope.message}">
-                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        ${sessionScope.message}
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <div class="bg-light p-4 rounded mb-4 text-center border" style="border-color: var(--border-subtle) !important;">
+                <div class="mb-3">
+                    <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-white shadow-sm" style="width: 56px; height: 56px; color: var(--primary);">
+                        <i class="fas fa-envelope-open-text fs-4"></i>
                     </div>
-                    <c:remove var="message" scope="session" />
-                </c:if>
-
-                <c:if test="${not empty sessionScope.error}">
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        ${sessionScope.error}
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    </div>
-                    <c:remove var="error" scope="session" />
-                </c:if>
-
-                <c:choose>
-                    <c:when test="${twoFactorEnabled}">
-                        <div class="text-center mb-4">
-                            <span class="badge bg-success fs-6"><i class="fas fa-check-circle"></i> 2FA is
-                                ENABLED</span>
-                        </div>
-                        <p class="text-muted text-center">Your account is protected with two-factor authentication.</p>
-                        <form action="${pageContext.request.contextPath}/2fa-setup" method="post">
-                            <input type="hidden" name="action" value="disable">
-                            <div class="d-grid gap-2 mt-3">
-                                <button type="submit" class="btn btn-danger">Disable 2FA</button>
-                            </div>
-                        </form>
-                    </c:when>
-                    <c:otherwise>
-                        <div class="text-center mb-3">
-                            <span class="badge bg-warning text-dark fs-6"><i class="fas fa-exclamation-triangle"></i>
-                                2FA is DISABLED</span>
-                        </div>
-
-                        <div class="mb-3">
-                            <p><span class="step-number">1</span> Open your authenticator app (Google Authenticator,
-                                Authy, etc.)</p>
-                        </div>
-
-                        <div class="mb-3">
-                            <p><span class="step-number">2</span> Add a new account and enter this secret key manually:
-                            </p>
-                            <div class="secret-key">${secret}</div>
-                            <small class="text-muted d-block mt-1 text-center">Account name:
-                                <strong>${username}@EduTrack</strong></small>
-                        </div>
-
-                        <div class="mb-3">
-                            <p><span class="step-number">3</span> Enter the 6-digit code from your app to verify:</p>
-                        </div>
-
-                        <form action="${pageContext.request.contextPath}/2fa-setup" method="post">
-                            <input type="hidden" name="action" value="enable">
-                            <input type="hidden" name="secret" value="${secret}">
-                            <div class="mb-3">
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
-                                    <input type="text" class="form-control" name="code" placeholder="Enter 6-digit code"
-                                        required maxlength="6" pattern="[0-9]{6}">
-                                </div>
-                            </div>
-                            <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-primary">Enable 2FA</button>
-                            </div>
-                        </form>
-                    </c:otherwise>
-                </c:choose>
-
-                <div class="text-center mt-3">
-                    <a href="${pageContext.request.contextPath}/dashboard" class="text-decoration-none">Back to
-                        Dashboard</a>
+                </div>
+                <h6 class="fw-bold text-dark mb-2">Verify your email address</h6>
+                <p class="text-muted small mb-0">We will send verification codes to:</p>
+                <div class="mt-2 text-dark fw-bold font-monospace bg-white border py-2 px-3 rounded d-inline-block shadow-sm">
+                    ${sessionScope.user.email}
                 </div>
             </div>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        </body>
 
-        </html>
+            <form action="${pageContext.request.contextPath}/2fa-setup" method="post">
+                <div class="mb-4">
+                    <label for="password" class="form-label">Confirm your password to continue</label>
+                    <input type="password" class="form-control" id="password" name="password" 
+                        placeholder="••••••••" required autofocus>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100 py-2 mb-3">Send Verification Code</button>
+                
+                <div class="text-center text-sm mt-3">
+                    <a href="${pageContext.request.contextPath}${sessionScope.user.role == 'STUDENT' ? '/student-dashboard' : (sessionScope.user.role == 'TEACHER' ? '/teacher-dashboard' : '/dashboard')}" class="text-decoration-none text-muted fw-medium border px-3 py-1 bg-light rounded" style="border-color: var(--border-subtle) !important;">
+                        Cancel Setup
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
